@@ -1,5 +1,5 @@
 # hi
-'''
+``` 
 name "hi" 
 org 100h 
 jmp rotina 
@@ -10,4 +10,4 @@ rotina:
     mov ah, 09h    
     int 21h     
 ret
-'''
+``` 
