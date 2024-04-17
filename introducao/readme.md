@@ -60,8 +60,8 @@ Este é um exemplo básico de programação em Assembly. Embora possa parecer co
 ### Instruções
 * **JMP:** Instrução de salto condicional ou incondicional.
   - Sintaxe: JMP *destino*
-   + Significado: Salta para o destino especificado.
-   + *destino*: Rótulo para onde o programa deve saltar.
+    - Significado: Salta para o destino especificado.
+    - *destino*: Rótulo para onde o programa deve saltar.
 * **MOV:** Instrução para mover (copiar) dados entre operandos.
 * **INT:** Instrução de interrupção usada para solicitar serviços do sistema operacional.
 * **RET:** Instrução de retorno, utilizada para retornar de uma sub-rotina.
