@@ -59,29 +59,38 @@ Este é um exemplo básico de programação em Assembly. Embora possa parecer co
 * **AH:** Parte alta do registrador AX, usado para passar o código da função para os serviços de interrupção do DOS.
 ### Instruções
 * **JMP:** Instrução de salto condicional ou incondicional.
-  - Sintaxe: JMP *destino*
+  - Sintaxe: **JMP *destino***
     - Significado: Salta para o destino especificado.
-    - *destino*: Rótulo para onde o programa deve saltar.
+    - ***destino***: Rótulo para onde o programa deve saltar.
 * **MOV:** Instrução para mover (copiar) dados entre operandos.
-  - Sintaxe: MOV *destino*, *origem*
+  - Sintaxe: **MOV *destino*, *origem***
     - Significado: Move (copia) dados da origem para o destino.
-    - *destino*: Local onde os dados serão movidos.
-    - *origem*: Local de onde os dados serão copiados.     
+    - ***destino***: Local onde os dados serão movidos.
+    - ***origem***: Local de onde os dados serão copiados.     
 * **INT:** Instrução de interrupção usada para solicitar serviços do sistema operacional.
-  - Sintaxe: INT *valor*
+  - Sintaxe: **INT *valor***
     - Significado: Chama a interrupção do sistema operacional com o valor especificado.
-    - *valor*: Número que representa o serviço a ser solicitado ao sistema operacional.
+    - ***valor***: Número que representa o serviço a ser solicitado ao sistema operacional.
 * **RET:** Instrução de retorno, utilizada para retornar de uma sub-rotina.
-  - Sintaxe: RET
+  - Sintaxe: **RET**
     - Significado: Retorna ao ponto de chamada após a execução de uma sub-rotina.
     - Não possui argumentos adicionais.
 ### Diretivas
 * **ORG:** Diretiva para definir o ponto de origem do programa.
+  - Sintaxe: **ORG *endereço***
+    - Significado: Define o ponto de origem do programa como o endereço especificado.
+    - ***endereço***: Endereço de memória onde o programa começará a ser executado.
 * **DB:** Diretiva para definir bytes na memória. Usado para declarar strings, constantes, etc.
+  - Sintaxe: **DB *valor1*, *valor2*, ...**
+    - Significado: Define bytes na memória com os valores especificados.
+    - Valores(***valor1***, ***valor2***, .., ***ValorN***): Dados a serem armazenados na memória, como strings, constantes, etc.
 * **NAME:** Diretiva para definir o nome do programa.
+  - Sintaxe: **NAME *"nome"***
+    - Significado: Define o nome do programa como o especificado.
+    - ***"nome"***: Nome do programa, usado para identificá-lo.
 ### Funções
 * **09h:** Função de impressão de string do DOS.
 ### Caracteres Especiais
-* **0Dh:* Caractere de retorno de carro (CR) em hexadecimal.
-* **0Ah:* Caractere de alimentação de linha (LF) em hexadecimal.
-* **24h:* Caractere de final de texto ($) em hexadecimal.
+* **0Dh:** Caractere de retorno de carro (CR) em hexadecimal.
+* **0Ah:** Caractere de alimentação de linha (LF) em hexadecimal.
+* **24h:** Caractere de final de texto ($) em hexadecimal.
