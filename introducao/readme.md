@@ -51,4 +51,27 @@ Na **rotina** principal, primeiro carregamos o endereço da mensagem para o regi
 ret
 ```
 Depois que a mensagem é impressa, usamos a instrução **ret** para **ret**ornar ao sistema operacional.
-
+### Conclusão
+Este é um exemplo básico de programação em Assembly. Embora possa parecer complicado no início, entender os conceitos básicos pode ajudar a desvendar a magia por trás do funcionamento dos computadores. À medida que continuamos aprendendo, exploraremos mais conceitos e construiremos programas mais complexos.
+## Usamos nesse exemplo
+### Registradores
+* **DX:** Registrador usado para armazenar endereços de dados na arquitetura x86.
+* **AH:** Parte alta do registrador AX, usado para passar o código da função para os serviços de interrupção do DOS.
+### Instruções
+* **JMP:** Instrução de salto condicional ou incondicional.
+  - Sintaxe: JMP *destino*
+   + Significado: Salta para o destino especificado.
+   + *destino*: Rótulo para onde o programa deve saltar.
+* **MOV:** Instrução para mover (copiar) dados entre operandos.
+* **INT:** Instrução de interrupção usada para solicitar serviços do sistema operacional.
+* **RET:** Instrução de retorno, utilizada para retornar de uma sub-rotina.
+### Diretivas
+* **ORG:** Diretiva para definir o ponto de origem do programa.
+* **DB:** Diretiva para definir bytes na memória. Usado para declarar strings, constantes, etc.
+* **NAME:** Diretiva para definir o nome do programa.
+### Funções
+* **09h:** Função de impressão de string do DOS.
+### Caracteres Especiais
+* **0Dh:* Caractere de retorno de carro (CR) em hexadecimal.
+* **0Ah:* Caractere de alimentação de linha (LF) em hexadecimal.
+* **24h:* Caractere de final de texto ($) em hexadecimal.
