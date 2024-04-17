@@ -94,3 +94,7 @@ Este é um exemplo básico de programação em Assembly. Embora possa parecer co
 * **0Dh:** Caractere de retorno de carro (CR) em hexadecimal.
 * **0Ah:** Caractere de alimentação de linha (LF) em hexadecimal.
 * **24h:** Caractere de final de texto ($) em hexadecimal.
+## Referências
+Naser, Ahmad Abdel; **HelloWorld.asm**; Disponível em https://github.com/AhmadNaserTurnkeySolutions/emu8086/blob/master/examples/HelloWorld.asm; jun.23; Acessado em abr.24.
+
+Anonymous; **Assembly**; Disponível em https://chat.openai.com/share/75d93bd9-4f84-4260-9539-948dee6ed712; abr.24; Acessado em abr.24. 
