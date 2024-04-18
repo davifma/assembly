@@ -105,7 +105,13 @@ Em resumo, o programa "inversor" é um exemplo de como você pode manipular stri
 ## Veja a lógica
 ```mermaid
 flowchart TD
-    início --> Texto Invertido --> rotina --> proximo_byte --> ponto_final --> inversor --> pronto --> final
+    início --> Texto Invertido;
+    Texto Invertido  --> rotina;
+    rotina --> proximo_byte;
+    proximo_byte --> ponto_final;
+    ponto_final --> inversor;
+    inversor --> pronto;
+    pronto --> final
 ```
 
 
