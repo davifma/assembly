@@ -86,14 +86,18 @@ inversor:
 Após encontrar o final da string, entramos em um novo loop para inverter a string. Este loop compara os registradores BX e SI para determinar quando chegamos ao meio da string. Então, ele troca os bytes na posição atual de BX e SI até que a string esteja completamente invertida.
 6. **Impressão da String Invertida:**
 ```
+pronto:
+    lea dx, texto
+    mov ah, 09h
+    int 21h
 ```
 Depois que a string é invertida, a instrução int 21h é usada para chamar a interrupção do DOS e imprimir a string invertida na tela.
 7. **Espera por uma Tecla Pressionada:**
 ```
 pronto:
-    lea dx, texto
-    mov ah, 09h
-    int 21h
+    mov ah, 0
+    int 16h
+    ret
 ```
 Finalmente, o programa espera por qualquer tecla ser pressionada antes de retornar ao sistema operacional.
 
