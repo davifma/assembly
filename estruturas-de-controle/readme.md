@@ -115,11 +115,7 @@ flowchart TD;
     pronto-->final;
 ```
 -->
-<!-- 
-  Referências sobre diagramas 
-  https://mermaid.js.org/syntax/flowchart.html 
-  https://docs.github.com/pt/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams
--->
+<!-- Referências sobre diagramas https://mermaid.js.org/syntax/flowchart.html https://docs.github.com/pt/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams -->
 
 
 
