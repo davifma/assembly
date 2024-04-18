@@ -104,11 +104,8 @@ Finalmente, o programa espera por qualquer tecla ser pressionada antes de retorn
 Em resumo, o programa "inversor" é um exemplo de como você pode manipular strings em Assembly. Ele mostra como usar loops, registros e operações de manipulação de strings para realizar uma tarefa mais complexa do que simplesmente imprimir uma mensagem na tela.
 ## Veja a lógica
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+flowchart INVERSOR
+    início --> Texto Invertido --> rotina --> proximo_byte --> ponto_final --> inversor --> pronto --> final
 ```
 
 
