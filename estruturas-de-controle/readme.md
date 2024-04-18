@@ -40,6 +40,7 @@ pronto
     int 16h
 ret
 ```
+[código comentado](https://github.com/davifma/assembly/blob/main/estruturas-de-controle/inversor-dfma-comentado.asm)
 O programa "inversor" é um pouco mais avançado do que o programa "hi". Enquanto o programa "hi" simplesmente imprime uma mensagem na tela, o programa "inversor" realiza uma tarefa mais complexa: inverter uma string.
 
 ## Como funciona
@@ -149,3 +150,8 @@ https://docs.github.com/pt/get-started/writing-on-github/working-with-advanced-f
 * **16h (Interrupção de BIOS):** Realiza chamadas de sistema para a BIOS.
 ### Caracteres Especiais
 * **'$' (Final da String):** Indica o final de uma string em Assembly.
+# Referências
+Naser, Ahmad Abdel; **reverse.asm**; Disponível em https://github.com/AhmadNaserTurnkeySolutions/emu8086/blob/master/examples/reverse.asm; jun.13; Acessado em abr.24.
+
+Anonymous; **Assembly**; Disponível em https://chat.openai.com/share/75d93bd9-4f84-4260-9539-948dee6ed712; abr.24; Acessado em abr.24.
+
