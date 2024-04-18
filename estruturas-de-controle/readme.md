@@ -102,6 +102,7 @@ pronto:
 Finalmente, o programa espera por qualquer tecla ser pressionada antes de retornar ao sistema operacional.
 
 Em resumo, o programa "inversor" é um exemplo de como você pode manipular strings em Assembly. Ele mostra como usar loops, registros e operações de manipulação de strings para realizar uma tarefa mais complexa do que simplesmente imprimir uma mensagem na tela.
+<!--
 ## Veja a lógica
 ```mermaid
 flowchart TD;
@@ -113,7 +114,12 @@ flowchart TD;
     inversor-->pronto;
     pronto-->final;
 ```
-
+-->
+<!-- 
+  Referências sobre diagramas 
+  https://mermaid.js.org/syntax/flowchart.html 
+  https://docs.github.com/pt/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams
+-->
 
 
 
