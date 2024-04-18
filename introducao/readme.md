@@ -10,7 +10,8 @@ rotina:
     mov ah, 09h    
     int 21h     
 ret
-``` 
+```
+[código comentado](https://github.com/davifma/assembly/blob/main/introducao/hi-davifma-comentado.asm)
 ## Programação em Assembly
 Assembly é uma linguagem de baixo nível usada para programar computadores. Ela é muito próxima da linguagem de máquina que os processadores entendem, o que a torna poderosa, mas também mais complexa do que linguagens de alto nível, como Python ou JavaScript.
 
