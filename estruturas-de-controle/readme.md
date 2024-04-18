@@ -102,10 +102,50 @@ pronto:
 Finalmente, o programa espera por qualquer tecla ser pressionada antes de retornar ao sistema operacional.
 
 Em resumo, o programa "inversor" é um exemplo de como você pode manipular strings em Assembly. Ele mostra como usar loops, registros e operações de manipulação de strings para realizar uma tarefa mais complexa do que simplesmente imprimir uma mensagem na tela.
-
-
-<!-- Referências sobre diagramas https://mermaid.js.org/syntax/flowchart.html https://docs.github.com/pt/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams -->
-
-
-
-
+<!-- 
+## Veja a lógica
+Se possível incluir um fluxograma aqui
+Referências sobre diagramas 
+https://mermaid.js.org/syntax/flowchart.html 
+https://docs.github.com/pt/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams 
+-->
+## Elementos usados no código
+### Registradores
+* **BX (Base Index):** Registrador de 16 bits usado para armazenar endereços de memória.
+* **SI (Source Index):** Registrador de 16 bits usado como índice para operações de manipulação de strings.
+* **AL (Low Byte of AX):** Registrador de 8 bits usado para armazenar dados de menor ordem do registrador AX.
+* **AH (High Byte of AX):** Registrador de 8 bits usado para armazenar dados de maior ordem do registrador AX.
+* **DX (Data Register):** Registrador de 16 bits usado para armazenar dados, frequentemente utilizado em operações de E/S.
+### Instruções
+* **LEA (Load Effective Address):** 
+  - Sintaxe: lea destino, origem
+  - Carrega o endereço efetivo de uma operação e armazena esse endereço no registrador de destino. Não acessa diretamente a memória.
+* **MOV (Move):** 
+  - Sintaxe: mov destino, origem
+  - Move dados de uma origem para um destino. Pode ser usado para mover dados entre registradores, entre registradores e memória, ou entre memória e registradores.
+* **CMP (Compare):** 
+  - Sintaxe: cmp operando1, operando2
+  - Compara dois operandos, subtraindo o segundo do primeiro e atualizando as flags de acordo com o resultado da subtração, sem alterar os operandos.
+* **INC (Increment):** 
+  - Sintaxe: inc operando
+  - Incrementa o valor de um operando em 1.
+* **DEC (Decrement):** 
+  - Sintaxe: dec operando
+  - Decrementa o valor de um operando em 1.
+* **JMP (Jump):** 
+  - Sintaxe: jmp destino
+  - Instrução de salto incondicional. Faz o programa pular para o rótulo especificado.
+* **JAE (Jump if Above or Equal):** 
+  - Sintaxe: jae destino
+  - Salta para o destino se a flag de carry estiver limpa (0) e a flag de zero estiver limpa (0).
+* **RET (Return):** 
+  - Não tem operandos.
+  - Instrução de retorno. Retorna do procedimento atual para o local de chamada.
+### Diretivas
+* **NAME (Nome do Programa):** Define o nome do programa.
+* **ORG (Origem):** Define o ponto de origem do programa.
+### Funções
+* **21h (Interrupção de DOS):** Realiza chamadas de sistema para o DOS.
+* **16h (Interrupção de BIOS):** Realiza chamadas de sistema para a BIOS.
+### Caracteres Especiais
+* **'$' (Final da String):** Indica o final de uma string em Assembly.
