@@ -87,6 +87,20 @@ https://github.com/davifma/assembly/blob/main/introducao/mov-letra-brilhante-dfm
   - Sintaxe: **INT *valor***
     - Significado: Chama a interrupção do sistema operacional com o valor especificado.
     - ***valor***: Número que representa o serviço a ser solicitado ao sistema operacional.
+```
+name "ola"
+ORG 100h                
+MOV AH, 0Eh  ; Define a funcao do BIOS para exibir caracteres.
+MOV AL, 'O'  ; Define o primeiro caractere a ser exibido.
+INT 10h      ; Exibe o caractere 'O'.
+MOV AL, 'l'  ; Define o proximo caractere a ser exibido.
+INT 10h      ; Exibe o caractere 'l'.
+MOV AL, 'a'             
+INT 10h                 
+MOV AL, '!'             
+INT 10h                               
+RET 
+```
 * **RET:** Instrução de retorno, utilizada para retornar de uma sub-rotina.
   - Sintaxe: **RET**
     - Significado: Retorna ao ponto de chamada após a execução de uma sub-rotina.
