@@ -122,7 +122,7 @@ https://docs.github.com/pt/get-started/writing-on-github/working-with-advanced-f
   - Sintaxe: lea destino, origem
   - Carrega o endereço efetivo de uma operação e armazena esse endereço no registrador de destino. Não acessa diretamente a memória.
 ```
-    ORG 100h                    ; Define o ponto de início do codigo em 256 (hex 100) na memória.
+ORG 100h                    ; Define o ponto de início do codigo em 256 (hex 100) na memória.
 
 MOV AL, VAR1                ; Move o valor inicial de VAR1 (22h) para o registrador AL.
 LEA BX, VAR1                ; Carrega o endereço de memoria de VAR1 no registrador BX.
