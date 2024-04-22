@@ -99,8 +99,9 @@ MOV AL, 'a'
 INT 10h                 
 MOV AL, '!'             
 INT 10h                               
-RET 
+RET
 ```
+https://github.com/davifma/assembly/blob/main/introducao/ola-comentado-dfma.asm
 * **RET:** Instrução de retorno, utilizada para retornar de uma sub-rotina.
   - Sintaxe: **RET**
     - Significado: Retorna ao ponto de chamada após a execução de uma sub-rotina.
