@@ -121,7 +121,7 @@ https://docs.github.com/pt/get-started/writing-on-github/working-with-advanced-f
 * **LEA (Load Effective Address):** 
   - Sintaxe: lea destino, origem
   - Carrega o endereço efetivo de uma operação e armazena esse endereço no registrador de destino. Não acessa diretamente a memória.
-  - ```
+```
     ORG 100h                    ; Define o ponto de início do codigo em 256 (hex 100) na memória.
 
 MOV AL, VAR1                ; Move o valor inicial de VAR1 (22h) para o registrador AL.
@@ -132,7 +132,7 @@ RET                         ; Retorna do programa, encerrando a execucao.
 
 VAR1 DB 22h                 ; Define VAR1 com um valor inicial de 22h.
 END                         ; Indica o fim do programa para o compilador/ensamblador.
-    ```
+```
 * **MOV (Move):** 
   - Sintaxe: mov destino, origem
   - Move dados de uma origem para um destino. Pode ser usado para mover dados entre registradores, entre registradores e memória, ou entre memória e registradores.
