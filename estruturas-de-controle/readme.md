@@ -32,7 +32,7 @@ inversor:
     inc bx
     dec si
     jmp inversor
-pronto
+pronto:
     lea dx, texto
     mov ah, 09h
     int 21h
